@@ -6,6 +6,8 @@ app = Flask(__name__, static_url_path = '')
 photos = UploadSet('photos', IMAGES)
 
 app.config['UPLOADED_PHOTOS_DEST'] = 'static/img'
+app.config['UPLOADED_PHOTOS_ALLOW'] = set(['png', 'jpg', 'jpeg'])
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 configure_uploads(app, photos)
 
 
@@ -16,9 +18,10 @@ def hello_world():
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST' and 'photo' in request.files:
+        print "19"
         print request.files['photo']
-        filename = photos.save(request.files['photo'])
-        return filename
+        photos.save(request.files['photo'], 'subfolder_test', 'filename_test.png')
+
     return render_template('main.html')
 
 
