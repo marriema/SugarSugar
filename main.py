@@ -18,7 +18,6 @@ def hello_world():
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST' and 'photo' in request.files:
-        print "19"
         print request.files['photo']
         photos.save(request.files['photo'], 'subfolder_test', 'filename_test.png')
 
