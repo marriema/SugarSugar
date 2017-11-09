@@ -68,7 +68,7 @@
 			<div class="row">
 				<div class="span6">
 					<form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
-						<input type=file onchange="readURL(this)"/>
+						<input type=file name=photo onchange="readURL(this)"/>
 						<button type="submit">Upload</button>
 					</form>
 					<img id="preview_image"/>
@@ -77,67 +77,69 @@
 		</div>
 	</section>
 
-	<section class="content-section-b">
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 mr-auto order-lg-2">
-					<hr class="section-heading-spacer">
-					<div class="clearfix"></div>
-					<h2 class="section-heading">3D Food Printer<br>Print Something Sweet</h2>
-					<p class="lead">We create this website as an interface to allow any generic graphic to be printed through the 3D printer, using any paste-like material such as cake frosting.
+<section class="content-section-b">
 
-				</div>
-				<div class="col-lg-5 ml-auto order-lg-1">
-					<img class="img-fluid" src="img/printer.jpg" alt="">
-				</div>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-5 mr-auto order-lg-2">
+				<hr class="section-heading-spacer">
+				<div class="clearfix"></div>
+				<h2 class="section-heading">3D Food Printer<br>Print Something Sweet</h2>
+				<p class="lead">We create this website as an interface to allow any generic graphic to be printed through the 3D printer, using any paste-like material such as cake frosting.
+
+			</div>
+			<div class="col-lg-5 ml-auto order-lg-1">
+				<img class="img-fluid" src="img/printer.jpg" alt="">
+			</div>
+		</div>
+
+	</div>
+	<!-- /.container -->
+
+</section>
+<!-- /.content-section-b -->
+
+<section class="content-section-a">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-5 ml-auto">
+				<hr class="section-heading-spacer">
+				<div class="clearfix"></div>
+				<h2 class="section-heading">Full Functionality<br>of This Website</h2>
+				<p class="lead">We want to possibly be able to send statistics in order to create icing pie charts on cookies. We’re also considering adding the option to select pre-loaded images such as emojis, clip art and such so that a user would not necessarily have to find their own images and can quickly start printing on their cookie. Another possibility is the capability to allow a user to draw their own art so that they can customize their cookie to their liking.
+
+			</div>
+			<div class="col-lg-5 mr-auto ">
+				<img class="img-fluid" src="img/cookie2.jpg" alt="">
+			</div>
+		</div>
+
+	</div>
+	<!-- /.container -->
+
+</section>
+<!-- /.content-section-a -->
+
+<aside class="banner">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-6 my-auto">
+				<h2>Connect to Start Printing</h2>
 			</div>
 
 		</div>
-		<!-- /.container -->
 
-	</section>
-	<!-- /.content-section-b -->
+	</div>
+	<!-- /.container -->
 
-	<section class="content-section-a">
-
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-5 ml-auto">
-					<hr class="section-heading-spacer">
-					<div class="clearfix"></div>
-					<h2 class="section-heading">Full Functionality<br>of This Website</h2>
-					<p class="lead">We want to possibly be able to send statistics in order to create icing pie charts on cookies. We’re also considering adding the option to select pre-loaded images such as emojis, clip art and such so that a user would not necessarily have to find their own images and can quickly start printing on their cookie. Another possibility is the capability to allow a user to draw their own art so that they can customize their cookie to their liking.
-
-				</div>
-				<div class="col-lg-5 mr-auto ">
-					<img class="img-fluid" src="img/cookie2.jpg" alt="">
-				</div>
-			</div>
-
-		</div>
-		<!-- /.container -->
-
-	</section>
-	<!-- /.content-section-a -->
-
-	<aside class="banner">
-
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-6 my-auto">
-					<h2>Connect to Start Printing</h2>
-				</div>
-
-			</div>
-
-		</div>
-		<!-- /.container -->
-
-	</aside>
-	<!-- /.banner -->
+</aside>
+<!-- /.banner -->
 
 	<!-- Footer -->
 	<footer>
