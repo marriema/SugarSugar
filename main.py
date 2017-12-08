@@ -27,12 +27,13 @@ def upload():
 
 @app.route('/upload2', methods=['POST'])        
 def upload2():
-    print request.form['txt']
+    #print request.form['txt']
     txt = request.form['txt']
-        
+    
+    print txt
     return render_template('main.html')
 
-print txt
+
 if __name__ == "__main__":
     app.debug = True
     app.run()
